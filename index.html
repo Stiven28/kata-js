@@ -6,12 +6,26 @@
 <body>
 <script>
 
-    /* Complete la función que toma un número entero no negativo
+    /* Powers of 2
+    Complete la función que toma un número entero no negativo
      n como entrada y devuelve una lista de todas las potencias de
       2 con el exponente que va de 0 a n(inclusive). */
+
+      /* Creamos una funcion que recibe n numeros, se inicializa una variable
+      se le asigna el valor 2, se inicializa una variable tipo array, se crea
+      un for, declaramos la variable i e inicializamos la variable se le asigna 
+      el valor cero y decimos que si n numeros es igual o mayor que la variable i,
+       la variable se autoincrementara, dentro de las llaves llamamos el array y usamos
+       el metodo push que es para asignar valore al array, se asignara la potencia de base
+       que es dos y el numero de iteraciones, el array retornara.*/
      
-    function powersOfTwo(n){
-  return []
+      function powersOfTwo(n){
+       const base =2;
+       let ar = [];
+       for(let i= 0; i<=n; i++){
+        ar.push(base **i);
+       }
+  return ar;
 }
 
 </script>
