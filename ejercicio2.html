@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* Count the number of Duplicates
+         Escriba una función que devuelva el recuento de caracteres alfabéticos y 
+         dígitos numéricos distintos que no distinguen entre mayúsculas y minúsculas
+          que aparecen más de una vez en la cadena de entrada. Se puede suponer que 
+          la cadena de entrada contiene solo letras (tanto mayúsculas como minúsculas) 
+          y dígitos numéricos.*/
+          
+     function duplicateCount(text){
+         let ar = [];
+         let ocurencias = 0;
+       for(let i=0; i<text.length; i++){
+            text = text.toLowerCase();
+        if (!ar.includes(text[i]) && text.indexOf(text[i]) !== text.lastIndexOf(text[i])) {
+                    ar.push(text[i]);
+                    ocurencias = ocurencias+1;
+
+        }
+       }
+       return ocurencias;
+    }
+    
+    
+    </script>
+</body>
+</html>
