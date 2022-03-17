@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* Opposites Attract 
+        https://www.codewars.com/kata/555086d53eac039a2a000083/train/javascript
+
+        Timmy y Sarah creen que están enamorados, pero en el lugar donde viven,
+         solo lo sabrán una vez que recojan una flor cada uno. Si una de las flores 
+         tiene un número par de pétalos y la otra tiene un número impar de pétalos, 
+         significa que están enamorados.
+
+        Escribe una función que tome el número de pétalos de cada flor y devuelva 
+        verdadero si están enamorados y falso si no lo están.*/
+
+        function lovefunc(flower1, flower2){
+           if(flower1 % 2 ==0 && flower2 % 2==1)return true
+           if(flower1 % 2 ==1 && flower2 % 2==0)return true
+            return false;
+        }
+
+
+             /* function lovefunc(flower1, flower2){
+                return (flower1 + flower2)% 2 ? true: false;
+                // moment of truth
+                }*/
+    </script>
+</body>
+</html>
