@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* Student's Final Grade
+        https://www.codewars.com/kata/5ad0d8356165e63c140014d4/train/javascript
+
+        Cree una función notaFinal, que calcule la nota final de un estudiante 
+        en función de dos parámetros: una nota para el examen y una cantidad de
+         proyectos completados.
+
+        Esta función debe tomar dos argumentos: examen - calificación del examen (de 0 a 100);
+        proyectos - número de proyectos completados (de 0 en adelante);
+
+        Esta función debería devolver un número (calificación final). Hay cuatro tipos de calificaciones 
+        finales:
+
+        100, si la calificación del examen es superior a 90 o si el número de proyectos terminados es superior a 10.
+        90, si la calificación del examen es superior a 75 y si el número de proyectos completados es mínimo 5.
+        75, si la calificación del examen es superior a 50 y si el número de proyectos completados es mínimo 2.
+        0, en otros casos */
+        
+        function finalGrade (exam, projects) {
+            let nota;
+            if(exam>90 || projects>10){
+                nota = 100;
+            }else if(exam>75 && projects>=5){
+                nota = 90;
+            } else if(exam>50 && projects>=2){
+                nota = 75;
+            } else {
+                nota = 0;
+            }
+            return nota;
+            }
+
+            /* otras formas de hacerlo
+            const finalGrade = (exam, projects) => {
+                if(exam > 90 || projects > 10) return 100
+                if(exam > 75 && projects > 4) return 90
+                if(exam > 50 && projects > 1) return 75
+                return 0;
+                }
+
+
+           const finalGrade = (exam, projects) => exam > 90 || projects > 10 ? 100 : exam > 75 && projects >= 5 ? 90 : exam > 50 && projects >= 2 ? 75 : 0
+
+            */
+
+    </script>
+</body>
+</html>
