@@ -13,6 +13,30 @@ const createNDimensionalArray = (n,size) => {
 
 
 
+
+/*
+
+  const createNDimensionalArray = (n,size) => {
+    let matriz1 = [];
+    let level = 'level '+ n;
+    let matriz2 = [];
+     
+       for(let j = 0; j<n; j++ ){
+           
+           for(let i = 0; i <size; i++){
+               matriz1[i] = level
+             matriz2.push(matriz1)
+             
+           }
+             matriz2.push(matriz2)
+              
+              return matriz1;
+          
+       }
+       
+     }
+
+     */
     //matriz.push(level);
   /*  for(let i = 0; i < size; i++){
         matriz[i] =new Array(level + " " + n);
