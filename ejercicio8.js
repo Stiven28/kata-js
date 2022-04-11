@@ -63,3 +63,43 @@ const createNDimensionalArray = (n,size) => {
      }
      https://www.codewars.com/kata/6161847f52747c0025d0349a/train/javascript
    */
+
+  const createNDimensionalArray = (n,size) => {
+    let matriz1 = [];
+    let level = 'level '+ n;
+    let matriz2 = [];
+    let matriz3 = [];
+    if(n==1){ 
+        for(let j = 0; j<n; j++ ){
+           
+           for(let i = 0; i <size; i++){
+               matriz1[i] = level
+             
+           }
+              return matriz1;
+       }
+       
+     }else
+      if(n==2){
+        for(let j = 0; j<size; j++ ){
+            matriz1[j] = level
+            for(let i = 0; i <size; i++){
+                matriz2[i] = matriz1;
+            }
+               
+           
+        }
+        return matriz2;
+     }else
+       if(n==3){
+         for(let j = 0; j<size; j++ ){
+            matriz1[j] = level
+            for(let i = 0; i <size; i++){
+                matriz2[i] = matriz1
+                matriz3[i] = matriz2
+            }
+        }
+         return matriz3;
+       }
+     
+    }
