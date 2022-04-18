@@ -7,13 +7,10 @@ El triángulo debe devolverse como una matriz anidada. Por ejemplo:
 
 function pascal(depth) {
   let array = [];
-     let arr = [];
-     
-     for(let i=0;i<depth;i++){
-        array[i] = [i]
-         arr[i] = array
-    
-     }
-     
-     return arr;
- }
+  for(let i=1; i<=depth; i++){
+    array.push(Array(i).fill(1)) 
+  }
+  
+  return array;
+  
+}
